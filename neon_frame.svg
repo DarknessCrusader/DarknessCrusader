@@ -1,0 +1,32 @@
+<svg width="720" height="560" viewBox="0 0 720 560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="neonBlurStrong" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+    </filter>
+    <filter id="neonBlurSoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+    </filter>
+    <clipPath id="clip">
+      <rect x="40" y="40" width="640" height="480" rx="14"/>
+    </clipPath>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0f2027"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="720" height="560" fill="url(#bgGlow)"/>
+
+  <!-- outer glow layers -->
+  <rect x="20" y="20" width="680" height="520" rx="18" fill="none"
+        stroke="#38BDF8" stroke-width="10" filter="url(#neonBlurStrong)" opacity="0.75"/>
+  <rect x="20" y="20" width="680" height="520" rx="18" fill="none"
+        stroke="#8ECAE6" stroke-width="5" filter="url(#neonBlurSoft)" opacity="0.9"/>
+
+  <!-- crisp core line -->
+  <rect x="20" y="20" width="680" height="520" rx="18" fill="none"
+        stroke="#E0F7FF" stroke-width="2"/>
+
+  <!-- the gif, clipped to rounded rect -->
+  <image href="./giphy.gif" x="40" y="40" width="640" height="480" clip-path="url(#clip)" preserveAspectRatio="xMidYMid slice"/>
+</svg>
