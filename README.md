@@ -1,5 +1,5 @@
 <div align="center">
 
-<img src="./neon_frame.svg" width="80%"/>
+<img src="./giphy.gif" width="90%"/>
 
 </div>
