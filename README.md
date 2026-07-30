@@ -1,3 +1,3 @@
 <div align="center">
-  <img src="./assets/giphy.gif" width="600" alt="character">
+  <img src="./giphy.gif" width="600" alt="character">
 </div>
